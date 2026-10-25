@@ -582,6 +582,24 @@ function setMarquee(el, text) {
   });
 }
 
+// Compact: fonts sit differently in their line box (VT323, Cinzel, Rajdhani...), so
+// a centered line can still look high or low. Shift title and artist so the middle
+// of their capital letters lands on the middle of the line.
+function centerCompactText() {
+  if (!opt.compact) return;
+  const c = document.createElement('canvas').getContext('2d');
+  for (const id of ['title', 'artist']) {
+    const el = $(id), cs = getComputedStyle(el);
+    c.font = `${cs.fontStyle} ${cs.fontWeight} ${cs.fontSize} ${cs.fontFamily}`;
+    const m = c.measureText('H');
+    const shift = (m.fontBoundingBoxDescent + m.actualBoundingBoxAscent - m.fontBoundingBoxAscent) / 2;
+    el.style.position = 'relative';
+    el.style.top = shift.toFixed(2) + 'px';
+  }
+}
+document.fonts.ready.then(centerCompactText);
+document.fonts.addEventListener('loadingdone', centerCompactText);
+
 function setArt(url) {
   if (!url || url === curArt) return;
   curArt = url;
