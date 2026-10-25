@@ -3,13 +3,12 @@
   <defs>
     <mask id="yw-cut">
       <rect width="64" height="64" fill="#fff"/>
-      <g fill="#000" stroke="#000" stroke-width="5.5" stroke-linejoin="round"><rect x="13" y="31" width="6" height="14"/><rect x="22.5" y="19" width="6" height="26"/><rect x="32" y="34" width="6" height="11"/><rect x="41.5" y="9" width="6" height="36"/></g>
+      <g fill="#000" stroke="#000" stroke-width="5.5" stroke-linejoin="round"><ellipse cx="21.5" cy="45" rx="6.6" ry="5" transform="rotate(-22 21.5 45)"/><ellipse cx="41.5" cy="39" rx="6.6" ry="5" transform="rotate(-22 41.5 39)"/><path d="M24.6 44V16.5L49.6 9V38H45.1V14.6L29.1 19.4V44Z"/></g>
     </mask>
   </defs>
-  <g mask="url(#yw-cut)">
-      <circle cx="32" cy="32" r="21" fill="#141414"/>
+  <g transform="translate(32 32) scale(1.22) translate(-32 -32)"><g mask="url(#yw-cut)">
+      <g><circle cx="32" cy="32" r="21" fill="#141414"/><circle cx="32" cy="32" r="15" fill="none" stroke="#262626" stroke-width="1"/><circle cx="32" cy="32" r="10.5" fill="none" stroke="#262626" stroke-width="1"/></g>
       <circle pathLength="100" cx="32" cy="32" r="21" fill="none" stroke="#ff0033" stroke-width="4.5"/>
-      <path d="M32 1.5V24M32 40V62.5M1.5 32H24M40 32H62.5" stroke="#ff0033" stroke-width="3.5"/>
     </g>
-    <g fill="#ffffff"><rect x="13" y="31" width="6" height="14"/><rect x="22.5" y="19" width="6" height="26"/><rect x="32" y="34" width="6" height="11"/><rect x="41.5" y="9" width="6" height="36"/></g>
+    <g fill="#ffffff"><ellipse cx="21.5" cy="45" rx="6.6" ry="5" transform="rotate(-22 21.5 45)"/><ellipse cx="41.5" cy="39" rx="6.6" ry="5" transform="rotate(-22 41.5 39)"/><path d="M24.6 44V16.5L49.6 9V38H45.1V14.6L29.1 19.4V44Z"/></g></g>
 </svg>
