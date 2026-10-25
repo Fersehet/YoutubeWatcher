@@ -65,9 +65,7 @@ With the server running, open **[http://127.0.0.1:8974/editor](http://127.0.0.1:
 
 The editor remembers your settings.
 
-## Themes
-
-![All eight themes side by side: Classic, Liquid glass, Vinyl, Retro hi-fi, True Damage, League of Legends, Counter-Strike and FACEIT](docs/themes.png)
+## Compact version
 
 Every theme also has a **compact** version, a slim one-line bar where the progress runs around the cover:
 
