@@ -416,7 +416,11 @@
   body.truedamage #bar { visibility: hidden; }
   body.truedamage #progress { color: #a09b8c; }
   body.compact.truedamage #card { border-radius: 2px; }
-  body.compact.truedamage #vinyl { box-shadow: 0 0 0 2px var(--accent); }
+  body.compact.truedamage #vinyl { box-shadow: 0 0 0 1px rgba(0,0,0,.6); }
+  /* progress ring in the colors of the card's progress line instead of teal */
+  body.compact.truedamage #art-wrap {
+    background: conic-gradient(#ff3b3b, #ff7a2a calc(var(--p, 0) * .6%), #ffc94a calc(var(--p, 0) * 1%), rgba(70,60,170,.32) 0);
+  }
   body.compact.truedamage #eq { flex: none; min-height: 0; width: 70px; height: 30px; }
 
   /* compact versions keep the hard edges */
